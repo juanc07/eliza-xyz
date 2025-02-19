@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Juan-Carlos-Claridad-s-workspace-uaqao1.us-west-2.xata.sh/db/eliza-xyz",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}
