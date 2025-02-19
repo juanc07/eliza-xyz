@@ -1,8 +1,7 @@
-import { createOpenAI } from "@ai-sdk/openai";
+import { createOpenAI, openai } from "@ai-sdk/openai";
 import { createTogetherAI } from "@ai-sdk/togetherai";
 import { createOpenRouter } from "@openrouter/ai-sdk-provider";
 import { initLogger, wrapAISDKModel } from "braintrust";
-import { openai } from "@ai-sdk/openai";
 
 export function getCerebrasModel(model: string) {
   const openai = createOpenAI({
@@ -33,7 +32,7 @@ export function getTogetherModel(model: string) {
 }
 
 const logger = initLogger({
-  projectName: "eliza.gg",
+  projectName: "elizas.xyz",
   apiKey: process.env.BRAINTRUST_API_KEY,
 });
 

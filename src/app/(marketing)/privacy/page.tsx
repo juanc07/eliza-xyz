@@ -2,7 +2,7 @@ import Markdown from "markdown-to-jsx";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Eliza.gg - Privacy Policy",
+  title: "elizas.xyz - Privacy Policy",
 };
 
 export default function Page() {

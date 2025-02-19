@@ -18,7 +18,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/start",
-        destination: "https://eliza.gg/eliza/",
+        destination: "https://elizas.xyz/eliza/",
         permanent: false,
       },
       {

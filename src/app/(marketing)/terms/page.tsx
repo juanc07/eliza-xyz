@@ -2,7 +2,7 @@ import Markdown from "markdown-to-jsx";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Eliza.gg - Terms of Service",
+  title: "elizas.xyz - Terms of Service",
 };
 
 export default function Page() {
@@ -12,7 +12,7 @@ export default function Page() {
 
 **Effective Date:** December 10th, 2024
 
-These Terms of Use ("Terms") govern your access to and use of documentation and related resources for the Eliza.gg project. Cogend, Inc. ("Cogend", "we," "our," or "us") provides these resources as a reference for developers and other interested parties. We are not affiliated with the Eliza project or its trademarks, including ElizaOS. By using these resources ("Resources"), you agree to comply with these Terms. If you do not agree to these Terms, do not access or use the Resources.
+These Terms of Use ("Terms") govern your access to and use of documentation and related resources for the Elizas.xyz project. Cogend, Inc. ("Cogend", "we," "our," or "us") provides these resources as a reference for developers and other interested parties. We are not affiliated with the Eliza project or its trademarks, including ElizaOS. By using these resources ("Resources"), you agree to comply with these Terms. If you do not agree to these Terms, do not access or use the Resources.
 
 **1. Scope and Purpose**
 ------------------------

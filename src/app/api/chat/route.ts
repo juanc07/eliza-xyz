@@ -140,7 +140,7 @@ export async function POST(request: Request) {
         // experimental_transform: smoothStream(),
         model: ELIZA_MODEL,
         system: `
-          You are a helpful assistant called Eliza.gg and you assist community members with questions about the Eliza open source framework and the ElizaOS operating system.
+          You are a helpful assistant called elizas.xyz and you assist community members with questions about the Eliza open source framework and the ElizaOS operating system.
 
           <relevant-docs>
               ${formattedResults}
@@ -214,7 +214,7 @@ export async function POST(request: Request) {
                   </question>
                   <example-sources>
                     Title: Get Started
-                    URL Source: https://eliza.gg/docs/get-started
+                    URL Source: https://elizas.xyz/docs/get-started
                     Content: To install ai16z, you can use the Eliza framework. ...
                   </example-sources>
                   <answer>
