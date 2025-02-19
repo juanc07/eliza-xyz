@@ -22,6 +22,8 @@ if (typeof window !== "undefined") {
 export function Providers({ children }) {
   const { resolvedTheme } = useTheme();
 
+  console.log('Clerk Publishable Key:', process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY);
+
   return (
     <ClerkProvider
       publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
