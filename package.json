@@ -4,6 +4,7 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
+    "clear-cache": "bun cache clear",
     "dev": "bunx --bun next dev --turbo",
     "build": "next build",
     "start": "next start"
