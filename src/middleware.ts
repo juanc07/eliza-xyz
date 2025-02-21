@@ -16,6 +16,7 @@ const isPublicRoute = createRouteMatcher([
   "/login(.*)",
   "/sign-up(.*)",
   "/_next/static/(.*)", // Allow Next.js static assets
+  "/(.*\\.(png|jpg|jpeg|gif|svg|ico|webp))",
 
   // API
   "/api/(.*)",
@@ -36,13 +37,22 @@ const isPublicRoute = createRouteMatcher([
 
 export default clerkMiddleware(async (auth, req) => {
   // Handle public routes
+  console.log("Request URL:", req.url);
+  console.log("NEXT_PUBLIC_APP_URL:", process.env.NEXT_PUBLIC_APP_URL);
   console.log("NODE_ENV:", process.env.NODE_ENV);
+  console.log("CLERK_PUBLISHABLE_KEY:", process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY);
+
   if (isPublicRoute(req)) {
     return NextResponse.next(); // Keep going for public routes
   }
 
   // Protect non-public routes
-  await auth.protect();
+  try {
+    await auth.protect();
+  } catch (error) {
+    console.error("Clerk protect error:", error);
+    return NextResponse.json({ error: "Authentication failed" }, { status: 401 });
+  }
 });
 
 export const config = {
