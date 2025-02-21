@@ -1,4 +1,5 @@
 import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
+import { NextResponse } from "next/server";
 
 const isPublicRoute = createRouteMatcher([
   // Pages
@@ -35,7 +36,7 @@ const isPublicRoute = createRouteMatcher([
 export default clerkMiddleware(async (auth, req) => {
   // Handle public routes
   if (isPublicRoute(req)) {
-    return;
+    return NextResponse.next(); // Keep going for public routes
   }
 
   // Protect non-public routes
