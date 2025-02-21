@@ -16,7 +16,7 @@ const isPublicRoute = createRouteMatcher([
   "/login(.*)",
   "/sign-up(.*)",
   "/_next/static/(.*)", // Allow Next.js static assets
-  "/.*\\.(png|jpg|jpeg|gif|svg|ico|webp)", // Match image files at root or any path
+  //"/.*\\.(png|jpg|jpeg|gif|svg|ico|webp)", // Match image files at root or any path
 
   // API
   "/api/(.*)",
