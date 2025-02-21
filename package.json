@@ -7,7 +7,7 @@
     "clear-cache": "bun cache clear",
     "dev": "bunx --bun next dev --turbo",
     "build": "next build",
-    "start": "next start"
+    "start": "NODE_ENV=production PORT=3000 node .next/standalone/server.js"
   },
   "dependencies": {
     "@ai-sdk/openai": "^1.0.8",
