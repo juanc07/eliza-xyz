@@ -15,6 +15,7 @@ const isPublicRoute = createRouteMatcher([
   // Auth
   "/login(.*)",
   "/sign-up(.*)",
+  "/_next/static/(.*)", // Allow Next.js static assets
 
   // API
   "/api/(.*)",
