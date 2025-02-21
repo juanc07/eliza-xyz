@@ -1,7 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  output: "standalone", // Ensures a self-contained build
   logging: false,
+  fetches: {
+    fullUrl: true, // Logs full fetch URLs for debugging
+  },
   compiler: {
     removeConsole: process.env.NODE_ENV === "production",
   },
