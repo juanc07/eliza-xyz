@@ -35,6 +35,7 @@ const isPublicRoute = createRouteMatcher([
 
 export default clerkMiddleware(async (auth, req) => {
   // Handle public routes
+  console.log("NODE_ENV:", process.env.NODE_ENV);
   if (isPublicRoute(req)) {
     return NextResponse.next(); // Keep going for public routes
   }
